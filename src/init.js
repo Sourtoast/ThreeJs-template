@@ -16,14 +16,14 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.setClearColor(new Color('#000'))
 document.querySelector('body').appendChild(renderer.domElement)
 
-// Other
+// Inne
 const orbitControls = new OrbitControls(camera, renderer.domElement)
 orbitControls.enableDamping = true
 orbitControls.dumpingFactor = 0.01
 const axesHelper = new AxesHelper(sceneSize);
 scene.add(axesHelper)
 
-window.addEventListener('resize', () => {
+addEventListener('resize', () => {
 	camera.aspect = window.innerWidth / window.innerHeight
 	camera.updateProjectionMatrix()
 	renderer.setSize(window.innerWidth, window.innerHeight)

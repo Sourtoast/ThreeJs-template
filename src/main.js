@@ -12,6 +12,6 @@ scene.add(exampleObject)
 const animate = () => {
 	renderer.render(scene, camera)
 	orbitControls.update()
-	window.requestAnimationFrame(animate)
+	requestAnimationFrame(animate)
 }
 animate()
